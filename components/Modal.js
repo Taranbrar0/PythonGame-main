@@ -16,7 +16,7 @@ function Modal (props) {
         return function cleanup(){
             document.body.removeEventListener('keydown',closeOnEsc)
         }
-    },[])
+    })
 
     const MODAL_STYLES = {
         position: 'fixed',

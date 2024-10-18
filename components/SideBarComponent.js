@@ -21,7 +21,7 @@ export default function SideBar(props) {
 
 
     const questionTopicsList = challengeQuestion.find(x => x.id === moduleName).questions.sort((a, b) => b.difficulty.localeCompare(a.difficulty)).map((question, i) => (
-        <NavItem eventKey={question.id}>
+        <NavItem eventKey={question.id} key={question.id}>
             <NavText>
                 <div className='mysidenav-item'>
                     <span>{question.title}</span>

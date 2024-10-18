@@ -9,7 +9,8 @@ import "bootstrap/dist/css/bootstrap.css";
 //import componentWillMount from 'component-will-mount-hook'
 import check from './icons8-check-mark-48.png'
 import downArrow from './down-arrow.png'
-import upArrow from './up-arrow.png'
+import upArrow from './up-arrow.png';
+import Image from "next/image.js";
 
 import axios from "axios";
 import { classnames } from "../utils/general";
@@ -45,7 +46,7 @@ export default class CodeProblem extends Component {
     
   }
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     const score = getStudentScoreCode(this.props.email)
     score.then(async value => {
       // console.log(value);
@@ -385,11 +386,11 @@ export default class CodeProblem extends Component {
          
          <div style={{fontSize: 24}} onClick={this.toggleVisibility} className="bg-teal-100	flex items-center justify-center gap-16 content-end border-emerald-900/50 border-4 rounded-3xl	">
             <div className="absolute top-3 right-20">
-            {this.state.isVisible && <img src={upArrow.src}/>}
-            {!this.state.isVisible && <img src={downArrow.src}/>}
+            {this.state.isVisible &&  <Image src={upArrow.src} />}
+            {!this.state.isVisible && <Image src={downArrow.src} />}
             </div>
             <center><h4>{this.props.question.questionTitle}</h4></center>
-            {this.state.completed && <div style={{color: "green", fontSize: 12}}>Completed <img src={check.src}/></div>}
+            {this.state.completed && <div style={{color: "green", fontSize: 12}}>Completed <Image src={check.src}/></div>}
             {!this.state.completed && <div style={{color: "red", fontSize: 12}}>Not done yet</div>}
              
             

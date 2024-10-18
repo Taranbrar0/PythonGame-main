@@ -51,7 +51,7 @@ export default function ProfileComponent(props) {
         setFriends([])
         getFriends(user, Friendship.ACCEPTED).then(f => {
             if (f.length === 0) {
-                setFriends([(<li>No friends yet.</li>)])
+                setFriends([(<li key={index}>No friends yet.</li>)])
                 return
             }
 
@@ -110,7 +110,7 @@ export default function ProfileComponent(props) {
         <div className="container mx-auto">
             <h3>My Profile</h3>
             <hr />
-            <div class="grid lg:grid-col-3" >
+            <div className="grid lg:grid-col-3" >
                 <div className="row ">
                     
                   <div className="col-md-auto ">
@@ -145,7 +145,7 @@ export default function ProfileComponent(props) {
                                 })
                             }
                         </ul> */}
-                        <div class="" >
+                        <div className="" >
                             <Router>
                                 <Routes>
                                 <Route path="/" element={<Badges/>}/>
@@ -154,7 +154,7 @@ export default function ProfileComponent(props) {
                         </div> 
                         </div>
                         <div className="row balance">
-                            <div onload = {show_point()}></div>
+                            <div onLoad = {show_point()}></div>
                             <FontAwesomeIcon icon={faCoins} size="3x" />
                             {/* <span > Earned: 1300 pts <br/>[ 1700 points left ]</span> */}
                             <span id = "p"> </span>
