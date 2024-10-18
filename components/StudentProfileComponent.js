@@ -31,7 +31,7 @@ export default function StudentProfileComponent(props) {
         const achievements = achievementsJson.achievements.filter(a => studentAchievements.includes(a.id))
 
         setAchievements(achievements.map(achievement => {
-            return (<AchievementComponent id={achievement.id} description={achievement.description} emoji={achievement.emoji} />)
+            return (<AchievementComponent id={achievement.id} key={achievement.id} description={achievement.description} emoji={achievement.emoji} />)
         }))
     }
 
@@ -92,9 +92,9 @@ export default function StudentProfileComponent(props) {
      * Gets a list of the user's friends.
      */
     const getFriendsList = () => {
-        getFriends(profileView, Friendship.ACCEPTED).then(f => {
+        getFriends(profileView, Friendship.ACCEPTED).then((f,index) => {
             if (f.length === 0) {
-                setFriends([(<li>No friends yet.</li>)])
+                setFriends([ key={index} (<li>No friends yet.</li>)])
                 return
             }
 

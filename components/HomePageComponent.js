@@ -186,7 +186,7 @@ export default function HomePageComponent() {
 
     if (openedModule) {
         return (
-            <div class="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between">
                 <OpenModuleComponent title={openedModule} />
                 {getEditor()}
                 <div className="px-5 mt-5">
@@ -196,11 +196,11 @@ export default function HomePageComponent() {
         )
     } else {
         return (
-            <div class="home_background">
+            <div className="home_background">
             <div className="container mx-auto pt-4">
-                <div class="d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                         <div className="flex-grow-1">
-                            <button type="button" onClick={() => setModalHowToShow(true)} class="btn btn-secondary mt-2 mb-4">How to Play</button>
+                            <button type="button" onClick={() => setModalHowToShow(true)} className="btn btn-secondary mt-2 mb-4">How to Play</button>
                             <HowToModal
                                 show={modalHowToShow}
                                 title={"How To Play!"}
@@ -209,28 +209,28 @@ export default function HomePageComponent() {
                         </div>
                         
                         <div className="flex-shrink-1">
-                            <h5 class="mt-2 mb-4 text-secondary">
-                                <div class="d-flex justify-content-between" onload = {show_point()}>
+                            <h5 className="mt-2 mb-4 text-secondary">
+                                <div className="d-flex justify-content-between" onLoad = {show_point()}>
                                     <div id = "p" className = "point me-2"></div> 
                                     <FontAwesomeIcon icon="fa-solid fa-coins" />
                                 </div>
                             </h5>
                         </div>
                 </div>
-                <div class="d-flex flex-row justify-content-between">
+                <div className="d-flex flex-row justify-content-between">
                     <div className="flex-grow-1">
                         <div className="row mb-3">
                             <div className="col d-flex justify-content-center">
                                 <h2>Topics</h2>
                             </div>
                         </div>
-                        <div class="row p-4" >
-                            <div class="col-sm-6">
-                                <div href="#" class="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
-                                    <div class="card-body">
-                                        <h1 class="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-code-branch" /></h1>
-                                        <h5 class="card-title">Conditional Statements</h5>
-                                        <p class="card-text">This module covers conditional statements.</p>
+                        <div className="row p-4" >
+                            <div className="col-sm-6">
+                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                    <div className="card-body">
+                                        <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-code-branch" /></h1>
+                                        <h5 className="card-title">Conditional Statements</h5>
+                                        <p className="card-text">This module covers conditional statements.</p>
                                         <span className="profile-modules-progress">
                                             <div className="progress">
                                                 <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -239,12 +239,12 @@ export default function HomePageComponent() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div href="#" class="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
-                                    <div class="card-body">
-                                        <h1 class="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-rotate-left" /></h1>
-                                        <h5 class="card-title">Loops</h5>
-                                        <p class="card-text">This module covers while loops and for loops.</p>
+                            <div className="col-sm-6">
+                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                    <div className="card-body">
+                                        <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-rotate-left" /></h1>
+                                        <h5 className="card-title">Loops</h5>
+                                        <p className="card-text">This module covers while loops and for loops.</p>
                                         <span className="profile-modules-progress">
                                             <div className="progress">
                                                 <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -254,13 +254,13 @@ export default function HomePageComponent() {
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-3 p-4" >
-                            <div class="col-sm-6">
-                                <div href="#" class="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
-                                    <div class="card-body">
-                                        <h1 class="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-brands fa-github" /></h1>
-                                        <h5 class="card-title">Example topic</h5>
-                                        <p class="card-text">This module covers example topic.</p>
+                        <div className="row mb-3 p-4" >
+                            <div className="col-sm-6">
+                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                    <div className="card-body">
+                                        <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-brands fa-github" /></h1>
+                                        <h5 className="card-title">Example topic</h5>
+                                        <p className="card-text">This module covers example topic.</p>
                                         <span className="profile-modules-progress">
                                             <div className="progress">
                                                 <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -269,12 +269,12 @@ export default function HomePageComponent() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div href="#" class="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
-                                    <div class="card-body">
-                                        <h1 class="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-list" /></h1>
-                                        <h5 class="card-title">Another example topic</h5>
-                                        <p class="card-text">This module covers another axample topic.</p>
+                            <div className="col-sm-6">
+                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                    <div className="card-body">
+                                        <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-list" /></h1>
+                                        <h5 className="card-title">Another example topic</h5>
+                                        <p className="card-text">This module covers another axample topic.</p>
                                         <span className="profile-modules-progress">
                                             <div className="progress">
                                                 <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>

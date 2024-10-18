@@ -316,22 +316,22 @@ function LoginComponent(props) {
                 <form className="level_switch">
                     <span className = "level_selection">Do you have experience in Programming?</span>
                     <p className="level_switch_muted">
-                        If you choose "having experience", we will give some questions to check your expertise.
+                        If you choose &quot; having experience&quot;, we will give some questions to check your expertise.
                         <br></br>
-                        If you don't have, please feel free to choose "No".
+                        If you don&apos;t have, please feel free to choose &quot;No&quot;.
                     </p>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox"/>
-                        <span class="slider" onClick = {question_shown}></span>
+                        <span className="slider" onClick = {question_shown}></span>
                     </label>
                     {/* <br></br> */}
-                    {/* <span class = "level_selection">Do you have experience in Programming?</span> */}
+                    {/* <span className = "level_selection">Do you have experience in Programming?</span> */}
                     {/* <button className="button_level" type="submit" onClick={handleSignUp}>Yes</button> */}
                     {/* <button className="button_level2" type="submit" onClick={handleSignUp}>No</button> */}
                     <br></br>
                     <br></br>
                     {/* <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={handleSignUp}>Sign up</button> */}
-                    <button class="cta" id = "submit_button" type="submit" onClick={handleSignUp}>
+                    <button className="cta" id = "submit_button" type="submit" onClick={handleSignUp}>
                         <span>Sign up</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                             <path d="M1,5 L11,5"></path>
@@ -341,8 +341,8 @@ function LoginComponent(props) {
                     {/* this is the tooltip part, the point is using span thing. I changed the given code, so you can change is back to the given code. */}
                     {/* <p>
                         What is your expertise level in<br></br>
-                        <span class="tooltip">
-                            conditional statements?<span class="tooltip-text">Example</span>
+                        <span className="tooltip">
+                            conditional statements?<span className="tooltip-text">Example</span>
                         </span>
                     </p> */}
                     {/* <input type="range" className="form-range" id="expertiseRange" min = "1" max = "5" step="1" defaultValue = "3" required = "True" list = "tickmarks" ref={expertiseLevel}/> */}
@@ -355,212 +355,212 @@ function LoginComponent(props) {
                 <form className = "white_box" id = "demo"></form>
                 <form className = "title-question">
                     <br></br>
-                    <span class="title-question">Let's check your expertise level in python.</span>
+                    <span className="title-question">Let&apos;s check your expertise level in python.</span>
                     {/* <br></br> */}
-                    {/* <div class="question" id = "question-1">
-                    <div class ="question-content">
+                    {/* <div className="question" id = "question-1">
+                    <div className ="question-content">
                         <p>
-                            <span class = "question_num">1. </span>
+                            <span className = "question_num">1. </span>
                             "What is the output of the following code?"
                         </p>
-                        <div class = "code-toolbox">
-                            <pre id="syntax" class = "language">
-                                <code class="language-python">
+                        <div className = "code-toolbox">
+                            <pre id="syntax" className = "language">
+                                <code className="language-python">
                                     salary 
-                                    <span class = "token operator">=</span>
-                                    <span class = "token number">10000</span>
+                                    <span className = "token operator">=</span>
+                                    <span className = "token number">10000</span>
                                     <br></br>
-                                    <span class = "token keyword">print</span>
-                                    <span class = "token punctuation">(</span>
-                                    <span class="token string">"Salary:"</span>
-                                    <span class="token punctuation">, </span>
+                                    <span className = "token keyword">print</span>
+                                    <span className = "token punctuation">(</span>
+                                    <span className="token string">"Salary:"</span>
+                                    <span className="token punctuation">, </span>
                                     salary
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                 </code>
                             </pre>
                         </div>
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer1} />
                     </div>
                     </div> */}
-                    <div class="question" id = "question-2">
-                    <div class ="question-content">
+                    <div className="question" id = "question-2">
+                    <div className ="question-content">
                         <p>
-                            <span class = "question_num">1. </span>
-                            "What is the output of the following code?"
+                            <span className = "question_num">1. </span>
+                            &quot;What is the output of the following code?&quot;
                         </p>
-                        <div class = "code-toolbox">
-                            <pre id="syntax" class = "language">
-                                <code class="language-python">
+                        <div className = "code-toolbox">
+                            <pre id="syntax" className = "language">
+                                <code className="language-python">
                                     myNumber 
-                                    <span class = "token operator"> = </span>
-                                    <span class = "token number">1</span>
+                                    <span className = "token operator"> = </span>
+                                    <span className = "token number">1</span>
                                     <br></br>
-                                    <span class = "token keyword">if </span>
+                                    <span className = "token keyword">if </span>
                                      myNumber 
-                                    <span class = "token operator"> % </span>
+                                    <span className = "token operator"> % </span>
                                      2 
-                                    <span class = "token operator"> == </span>
+                                    <span className = "token operator"> == </span>
                                     0
-                                    <span class = "token punctuation">:</span>
+                                    <span className = "token punctuation">:</span>
                                     <br></br>
-                                    <span class="token keyword">    print</span>
-                                    <span class="token punctuation">(</span>
-                                    "correct"
-                                    <span class = "token punctuation">)</span>
+                                    <span className="token keyword">    print</span>
+                                    <span className="token punctuation">(</span>
+                                    &quot;correct&quot;
+                                    <span className = "token punctuation">)</span>
                                     <br></br>
-                                    <span class = "token keyword">else</span>
-                                    <span class = "token punctuation">:</span>
+                                    <span className = "token keyword">else</span>
+                                    <span className = "token punctuation">:</span>
                                     <br></br>
-                                    <span class="token keyword">    print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">    print</span>
+                                    <span className="token punctuation">(</span>
                                     myNumber
-                                    <span class = "token punctuation">)</span>
+                                    <span className = "token punctuation">)</span>
                                 </code>
                             </pre>
                         </div>
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer2} />
                     </div>
                     </div>
-                    <div class="question" id = "question-3">
-                    <div class ="question-content">
+                    <div className="question" id = "question-3">
+                    <div className ="question-content">
                         <p>
-                            <span class = "question_num">2. </span>
-                            "What is the output of the following code?"
+                            <span className = "question_num">2. </span>
+                            &quot;What is the output of the following code?&quot;
                         </p>
-                        <div class = "code-toolbox">
-                            <pre id="syntax" class = "language">
-                                <code class="language-python">
-                                    <span class="token keyword">def </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                        <div className = "code-toolbox">
+                            <pre id="syntax" className = "language">
+                                <code className="language-python">
+                                    <span className="token keyword">def </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     num1
-                                    <span class="token punctuation">, </span>
+                                    <span className="token punctuation">, </span>
                                     num2
-                                    <span class = "token operator"> = </span>
-                                    <span class="token number">1</span>
-                                    <span class="token punctuation">):</span>
+                                    <span className = "token operator"> = </span>
+                                    <span className="token number">1</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">    numList</span>
-                                    <span class = "token operator"> = </span>
-                                    ""
+                                    <span className="to">    numList</span>
+                                    <span className = "token operator"> = </span>
+                                    &quot;&quot;
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     i
-                                    <span class="token keyword"> in range</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword"> in range</span>
+                                    <span className="token punctuation">(</span>
                                     0, num1, num2
-                                    <span class="token punctuation">):</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">        numList += str(i)</span>
+                                    <span className="to">        numList += str(i)</span>
                                     <br></br>
-                                    <span class="token keyword">    return</span>
-                                    <span class="token function"> len</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">    return</span>
+                                    <span className="token function"> len</span>
+                                    <span className="token punctuation">(</span>
                                     numList
-                                    <span class="token punctuation">)</span>
-                                    {/* <span class="tn">    res</span>
-                                    <span class = "token operator"> = </span>
+                                    <span className="token punctuation">)</span>
+                                    {/* <span className="tn">    res</span>
+                                    <span className = "token operator"> = </span>
                                     num1
-                                    <span class = "token operator"> * </span>
+                                    <span className = "token operator"> * </span>
                                     num2 */}
                                     <br></br>
                                     <br></br>
                                     result
-                                    <span class = "token operator"> = </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className = "token operator"> = </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     10
-                                    <span class="token punctuation">,</span>
+                                    <span className="token punctuation">,</span>
                                     2
                                     {/* 0, 0.5, 1.0, 1.5, 2.0, 2.5 */}
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                     <br></br>
-                                    <span class="token keyword">print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">print</span>
+                                    <span className="token punctuation">(</span>
                                     result
-                                    <span class = "token punctuation">)</span>
+                                    <span className = "token punctuation">)</span>
                                 </code>
                             </pre>
                         </div>
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer3} />
                     </div>
                     </div>
-                    <div class="question" id = "question-3">
-                    <div class ="question-content">
+                    <div className="question" id = "question-3">
+                    <div className ="question-content">
                         <p>
-                            <span class = "question_num">3. </span>
-                            "What is the output of the following code?"
+                            <span className = "question_num">3. </span>
+                            &quot;What is the output of the following code?&quot;
                         </p>
-                        <div class = "code-toolbox">
-                            <pre id="syntax" class = "language">
-                                <code class="language-python">
-                                    <span class="token keyword">def </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                        <div className = "code-toolbox">
+                            <pre id="syntax" className = "language">
+                                <code className="language-python">
+                                    <span className="token keyword">def </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     num1
-                                    <span class="token punctuation">, </span>
+                                    <span className="token punctuation">, </span>
                                     num2
-                                    <span class = "token operator"> = </span>
-                                    <span class="token number">1</span>
-                                    <span class="token punctuation">):</span>
+                                    <span className = "token operator"> = </span>
+                                    <span className="token number">1</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">     numList</span>
-                                    <span class = "token operator"> = </span>
+                                    <span className="to">     numList</span>
+                                    <span className = "token operator"> = </span>
                                     []
                                     <br></br>
-                                    <span class="to">     result</span>
-                                    <span class = "token operator"> = </span>
+                                    <span className="to">     result</span>
+                                    <span className = "token operator"> = </span>
                                     0
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     i
-                                    <span class="token keyword"> in range</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword"> in range</span>
+                                    <span className="token punctuation">(</span>
                                     0, num1, num2
-                                    <span class="token punctuation">):</span>
+                                    <span className="token punctuation">):</span>
                                     <br></br>
-                                    <span class="to">        numList.append(i)</span>
+                                    <span className="to">        numList.append(i)</span>
                                     <br></br>
-                                    <span class="token keyword">    for </span>
+                                    <span className="token keyword">    for </span>
                                     num
-                                    <span class="token keyword"> in </span>
+                                    <span className="token keyword"> in </span>
                                     numList
-                                    <span class="token punctuation">:</span>
+                                    <span className="token punctuation">:</span>
                                     <br></br>
-                                    <span class="to">        result</span>
-                                    <span class = "token operator"> += </span>
-                                    <span class="to">num</span>
+                                    <span className="to">        result</span>
+                                    <span className = "token operator"> += </span>
+                                    <span className="to">num</span>
                                     <br></br>
-                                    <span class="token keyword">    return </span>
+                                    <span className="token keyword">    return </span>
                                     result
-                                    {/* <span class="tn">    res</span>
-                                    <span class = "token operator"> = </span>
+                                    {/* <span className="tn">    res</span>
+                                    <span className = "token operator"> = </span>
                                     num1
-                                    <span class = "token operator"> * </span>
+                                    <span className = "token operator"> * </span>
                                     num2 */}
                                     <br></br>
                                     <br></br>
                                     result
-                                    <span class = "token operator"> = </span>
-                                    <span class="token function">calculate</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className = "token operator"> = </span>
+                                    <span className="token function">calculate</span>
+                                    <span className="token punctuation">(</span>
                                     10
-                                    <span class="token punctuation">,</span>
+                                    <span className="token punctuation">,</span>
                                     3
                                     {/* 0, 0.5, 1.0, 1.5, 2.0, 2.5 */}
-                                    <span class="token punctuation">)</span>
+                                    <span className="token punctuation">)</span>
                                     <br></br>
-                                    <span class="token keyword">print</span>
-                                    <span class="token punctuation">(</span>
+                                    <span className="token keyword">print</span>
+                                    <span className="token punctuation">(</span>
                                     result
-                                    <span class = "token punctuation">)</span>
+                                    <span className = "token punctuation">)</span>
                                 </code>
                             </pre>
                         </div>
                         <input type="answer1" id="inputAnswer1" className="answer-box" placeholder="Answer" required="True" ref={answer4} />
                     </div>
                     </div>
-                    <button class="cta2" id = "submit_button2" type="submit" onClick={handleSignUp}>
+                    <button className="cta2" id = "submit_button2" type="submit" onClick={handleSignUp}>
                         <span>Sign up</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                             <path d="M1,5 L11,5"></path>
@@ -580,7 +580,7 @@ function LoginComponent(props) {
                 <form className="form-signin">
                     <h1 className="h3 font-weight-normal">Please Sign In</h1>
                     <p className="mb-3 text-muted">
-                        Don't have an account? <a href="#" onClick={() => setSignUp(true)}>Sign up</a>.
+                        Don&apos;t have an account? <a href="#" onClick={() => setSignUp(true)}>Sign up</a>.
                     </p>
                     <p className="mb-3 text-muted">
                         Forgot password? Type your email below and click <a href="#" onClick={handleForgotPassword}>here</a>.

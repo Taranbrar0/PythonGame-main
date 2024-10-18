@@ -47,7 +47,7 @@ function CompletedModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            <h2 class="mt-3">🎉 Congratulations! 🎉</h2>
+            <h2 className="mt-3">🎉 Congratulations! 🎉</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -329,7 +329,7 @@ function OpenModuleComponent(props) {
             currentRadio.checked = false;
             currentRadio.style.visibility = "visible";
         }
-        document.getElementsByClassName("form-check-input").checked = false;
+        document.getElementsByclassName("form-check-input").checked = false;
         formik.setFieldValue('picked', '')
         setCurrentExplanation('')
     }
@@ -426,10 +426,10 @@ function OpenModuleComponent(props) {
     }
 
     return (
-        <div class="d-flex flex-row flex-grow-1 ms-5">
+        <div className="d-flex flex-row flex-grow-1 ms-5">
             <SideBar sideOut={sideOut} moduleName={moduleName.replaceAll('-', '_')}/>
-            <div class="bg-primary text-dark bg-opacity-25 rounded ps-2 pt-4 me-5 mb-4">
-                <div id = "quiz_list" class = "quiz_list3">
+            <div className="bg-primary text-dark bg-opacity-25 rounded ps-2 pt-4 me-5 mb-4">
+                <div id = "quiz_list" className = "quiz_list3">
                 </div> 
             </div>
             <div className="row flex-grow-1" id="quiz_box">  
@@ -441,7 +441,7 @@ function OpenModuleComponent(props) {
                         {elements}
                         <div id ="quiz_form">
                         <div id="mc-question-box">
-                        <div class = "code-toolbox">
+                        <div className = "code-toolbox">
                         <form onSubmit={formik.handleSubmit}>
                             <p id="quiz_question">Question</p>
                             <SyntaxHighlighter id="quiz_code" language="python">
@@ -476,8 +476,8 @@ function OpenModuleComponent(props) {
                                     <button className="btn btn-success btn-block" type="submit" disabled={formik.isSubmitting}>Submit</button>
                                 </div>
                                 <div className="col">
-                                    <div onload = {show_point()}>
-                                        <div class="d-flex justify-content-start">
+                                    <div onLoad = {show_point()}>
+                                        <div className="d-flex justify-content-start">
                                             <div id = "p" className = "point me-2"></div>
                                             <FontAwesomeIcon icon="fa-solid fa-coins" />
                                         </div>

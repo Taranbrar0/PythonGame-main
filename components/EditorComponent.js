@@ -261,7 +261,7 @@ export default function EditorComponent(props) {
             >
               <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                  <h2 class="mt-3">🎉 Congratulations! 🎉</h2>
+                  <h2 className="mt-3">🎉 Congratulations! 🎉</h2>
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
@@ -323,10 +323,10 @@ export default function EditorComponent(props) {
       }
     
     return (
-            <div class="codingchall">
+            <div className="codingchall">
                 <h1>Coding Challenge</h1>
-                <div className="editor-output">
-                    <div className="output">
+                <div classNameName="editor-output">
+                    <div classNameName="output">
                         <h5>Question {currentQuestionNumber} - {currentQuestion.title}</h5>
                         <ul dangerouslySetInnerHTML={{__html:currentQuestion.question}}></ul>
                         <Editor
@@ -343,8 +343,8 @@ export default function EditorComponent(props) {
 
             <p></p>
             
-            <div className="editor-output">
-                <div className="output">
+            <div classNameName="editor-output">
+                <div classNameName="output">
                     <h3>Output</h3>
                     <ul>
                         {
@@ -352,18 +352,18 @@ export default function EditorComponent(props) {
                         }
                     </ul>
                     <CheckOutputComponent output={output} moduleName={moduleName}/>
-                    <div className = "pointdescription"> You have {score} <FontAwesomeIcon icon="fa-solid fa-coins" /></div>
-                    <div className = "pointdescription"> 50 <FontAwesomeIcon icon="fa-solid fa-coins" /> are need to use a hint.</div>
+                    <div classNameName = "pointdescription"> You have {score} <FontAwesomeIcon icon="fa-solid fa-coins" /></div>
+                    <div classNameName = "pointdescription"> 50 <FontAwesomeIcon icon="fa-solid fa-coins" /> are need to use a hint.</div>
                 </div>
-                <div class="btn-group btn-group-editor-run" role="group">
-                    <button type="button" className={"btn btn-primary" + (runEnabled ? "" : " disabled" )} onClick={e => runCode(e)}>Run Code</button>
+                <div className="btn-group btn-group-editor-run" role="group">
+                    <button type="button" classNameName={"btn btn-primary" + (runEnabled ? "" : " disabled" )} onClick={e => runCode(e)}>Run Code</button>
                     <HintModal
                         show={modalHintShow}
                         title={currentQuestionNumber}
                         body={currentQuestion.hint}
                         onHide={() => setModalHintShow(false)}
                     />
-                    <button type="button" className="btn btn-light" href="#" role="button" onClick={handleOpen}>Hint</button>
+                    <button type="button" classNameName="btn btn-light" href="#" role="button" onClick={handleOpen}>Hint</button>
                     <ErrModal
                         show={modalErrShow}
                         title={challengeNumber + 1}
@@ -381,7 +381,7 @@ export default function EditorComponent(props) {
                         body={<button onClick={() => {setChallengeNumber(challengeNumber + 1)}}>Try Next Question</button>}
                         onHide={() => setModalNextQuestionShow(false)}
                     /> */}
-                    {errorMessage != "" ? <button type="button" className="btn btn-light" href="#" role="button" onClick={() => {setModalErrShow(true)}}>Error Check</button> : ""}
+                    {errorMessage != "" ? <button type="button" classNameName="btn btn-light" href="#" role="button" onClick={() => {setModalErrShow(true)}}>Error Check</button> : ""}
                 </div>
             </div>
         </div>
