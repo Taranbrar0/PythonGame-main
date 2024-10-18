@@ -151,7 +151,7 @@ export default function StudentProfileComponent(props) {
                         {
                             achievements.length === 0 ? <p>No achievements yet.</p> : achievements.map(achievement => {
                                 return (
-                                    <li>
+                                    <li key={achievement.ACCEPTED}>
                                         {achievement}
                                     </li>
                                 )
