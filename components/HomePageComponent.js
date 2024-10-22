@@ -210,7 +210,7 @@ export default function HomePageComponent() {
                         
                         <div className="flex-shrink-1">
                             <h5 className="mt-2 mb-4 text-secondary">
-                                <div className="d-flex justify-content-between" onLoad = {show_point()}>
+                                <div className="d-flex justify-content-between" >
                                     <div id = "p" className = "point me-2"></div> 
                                     <FontAwesomeIcon icon="fa-solid fa-coins" />
                                 </div>
@@ -226,7 +226,7 @@ export default function HomePageComponent() {
                         </div>
                         <div className="row p-4" >
                             <div className="col-sm-6">
-                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                <div href="#" className="card modules_card" data-module="conditional-statements" onClick={handleModuleStart}>
                                     <div className="card-body">
                                         <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-code-branch" /></h1>
                                         <h5 className="card-title">Conditional Statements</h5>
@@ -240,7 +240,7 @@ export default function HomePageComponent() {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                <div href="#" className="card modules_card" data-module="conditional-statements" onClick={handleModuleStart}>
                                     <div className="card-body">
                                         <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-rotate-left" /></h1>
                                         <h5 className="card-title">Loops</h5>
@@ -256,7 +256,7 @@ export default function HomePageComponent() {
                         </div>
                         <div className="row mb-3 p-4" >
                             <div className="col-sm-6">
-                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                <div href="#" className="card modules_card" data-module="conditional-statements" onClick={handleModuleStart}>
                                     <div className="card-body">
                                         <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-brands fa-github" /></h1>
                                         <h5 className="card-title">Example topic</h5>
@@ -270,7 +270,7 @@ export default function HomePageComponent() {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div href="#" className="card modules_card" module="conditional-statements" onClick={handleModuleStart}>
+                                <div href="#" className="card modules_card" data-module="conditional-statements" onClick={handleModuleStart}>
                                     <div className="card-body">
                                         <h1 className="d-flex justify-content-center mb-3"><FontAwesomeIcon icon="fa-solid fa-list" /></h1>
                                         <h5 className="card-title">Another example topic</h5>

@@ -121,7 +121,7 @@ const Landing = () => {
   <CodeProblem {...Q4}/>
   <CodeProblem {...Q5}/>
   <div className="btn-group btn-group-editor-run" role="group">
-        <button type="button" classNameName="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
+        <button type="button" className="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
   </div> 
     </>
   );

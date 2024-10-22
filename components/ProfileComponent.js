@@ -154,7 +154,8 @@ export default function ProfileComponent(props) {
                         </div> 
                         </div>
                         <div className="row balance">
-                            <div onLoad = {show_point()}></div>
+                            {/* onLoad = {show_point()} */}
+                            <div ></div>
                             <FontAwesomeIcon icon={faCoins} size="3x" />
                             {/* <span > Earned: 1300 pts <br/>[ 1700 points left ]</span> */}
                             <span id = "p"> </span>

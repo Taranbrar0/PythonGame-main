@@ -173,7 +173,7 @@ export default function EasyEditorComponent(props) {
         }
 
         return (
-            <button type="submit" classNameName="btn btn-primary">Check Answers</button>
+            <button type="submit" className="btn btn-primary">Check Answers</button>
         )
     }
 
@@ -197,7 +197,7 @@ export default function EasyEditorComponent(props) {
                 </ol>
                 <div className="btn-group" role="group">
                     {checkAnswersBtn()}
-                    <button type="button" classNameName="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
+                    <button type="button" className="btn btn-light" href="#" role="button" onClick={closeCodingChallenge}>Close Coding Challenge</button>
                 </div>
             </form>
         </div>

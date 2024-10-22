@@ -9,7 +9,7 @@ export default function AchievementComponent(props) {
     const emoji = props.emoji
 
     return (
-        <div className='achievement' achievementId={id}>
+        <div className='achievement' key={id}>
             <span className='achievement-emoji'>{emoji}</span>
             <span className='achievement-description'>{description}</span>
         </div>

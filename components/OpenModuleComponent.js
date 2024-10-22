@@ -476,7 +476,8 @@ function OpenModuleComponent(props) {
                                     <button className="btn btn-success btn-block" type="submit" disabled={formik.isSubmitting}>Submit</button>
                                 </div>
                                 <div className="col">
-                                    <div onLoad = {show_point()}>
+                                    {/* onLoad = {show_point()} */}
+                                    <div >
                                         <div className="d-flex justify-content-start">
                                             <div id = "p" className = "point me-2"></div>
                                             <FontAwesomeIcon icon="fa-solid fa-coins" />
